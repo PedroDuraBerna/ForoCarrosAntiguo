@@ -1,0 +1,468 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sesion_iniciada{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+    position: absolute;
+}
+.sesion_iniciada input{
+    color: white;
+    background-color: transparent;
+    padding: 2px;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* NAVEGADOR */
+
+#navegador{
+    background-color: rgb(201, 102, 102);
+    display: flex;
+    justify-content: center;
+}
+#navegador ul{
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#navegador a{
+    color: white;
+    text-decoration: none;
+}
+#navegador li{
+    text-align: center;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#navegador li:hover{
+    transition:0.5s;
+    background-color: brown;
+}
+#navegador img{
+    display: none;
+}
+
+/* REGISTRO */
+
+h2{
+    text-align: center;
+    color:brown;
+    padding:10px;
+}
+h3{
+    color:white;
+    background-color: brown;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.registro{
+    border:1px solid brown;
+    margin: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.registro a{
+    color: black;
+}
+.usuario_registrado_correctamente h3{
+    text-align: center;
+}
+.usuario_registrado_correctamente p{
+    margin: 40px;
+}
+.nota_caracteres{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.izq{
+    width: 150px;
+}
+.registro table td{
+    padding:10px;
+}
+hr{
+    margin:10px;
+}
+h4{
+    margin-bottom: 10px;
+}
+#normas{
+    border:1px solid brown;
+    margin:10px;
+    padding:10px;
+    margin-bottom:25px;
+}
+#botones_formulario{
+    display: flex;
+    justify-content: flex-end;
+}
+#botones_formulario input{
+    color: white;
+    background-color: brown;
+    padding:1px;
+}
+.px20izq{
+    margin-left: 20px;
+}
+.red{
+    color:red;
+}
+#botones_formulario .der10px{
+    margin-right: 10px;
+}
+
+/* INGRESO */
+
+.login_usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    border:1px solid grey;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.login_usuario td{
+    padding: 10px;
+}
+.login_usuario a{
+    color:black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.login_usuario  .botones_login{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.boton_ingreso{
+    margin-bottom: 20px;
+}
+
+/* INDEX */
+
+#contGlobal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#contIzquierda{
+    padding: 5px;
+    display: flex;
+  flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+#contDerecha{
+  padding: 5px;
+}
+#cont1, #cont2, #cont3{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      border:1px solid brown;
+}
+#cont1{
+    width: 100%;
+  background-color: white;
+}
+#cont1 h3{
+  background-color: brown;
+}
+#cont2,#cont3{
+  width: 400px;
+  height: 400px;
+}
+
+/* MI PERFIL PÚBLICO */
+
+.no_cabe_texto{
+    padding-left: 10px;
+    flex-direction: column;
+}
+.no_cabe_texto a{
+    color: brown;
+}
+
+/* MI PERFIL */
+
+#contenedorMiPerfilGlobal{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#contenedorInformacion,#contenedorBiografia,#contenedroEstadisticas{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border:1px solid brown;
+    margin: 5px;
+}
+#contenedorInformacion h3,#contenedorBiografia h3,#contenedroEstadisticas h3{
+    margin-bottom: 0px;
+}
+#contenedorInformacion{
+    width: 40%;
+}
+#contenedorInformacion img{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 1000px;
+    background-color: brown;
+}
+#contenedorBiografia,#contenedroEstadisticas{
+    width: 30%;
+}
+#info_principal{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+#info_principal{
+    border-bottom:1px solid brown;
+}
+.border_top_brown{
+    border-top:1px solid brown;
+}
+#info_principal:last-child{
+    border:none;
+}
+#info_principal_imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#info_principal p{
+    padding: 10px;
+    width: 100%;
+}
+.conoceme_box{
+    flex-direction: column;
+    padding-left:10px;
+    padding-right:10px;
+}
+#contenedorInformacion b a{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    color: brown;
+}
+
+/* CONFIGURACIÓN */
+
+#config_user{
+    border:1px solid grey;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+#config_user p{
+    margin-bottom: 10px;
+}
+#config_user input{
+    width: 100%;
+}
+#config_user #boton_config{
+    background-color: brown;
+    color: white;
+    margin-left: 35%;
+    width: 30%;
+}
+#config_user img{
+    background-color: brown;
+    padding: 10px;
+    border-radius: 100%;
+    margin: auto;
+    width: 100px;
+}
+#config_user #config_foto{
+    display: flex;
+    justify-content: center;
+}
+#config_user textarea{
+    width: 100%;
+    resize: none;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1000px) {
+    #contGlobal{
+        flex-direction: column;
+    }
+    #contDerecha{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contenedorMiPerfilGlobal{
+        flex-direction: column;
+        padding: 5px;
+    }
+    #contenedorInformacion,#contenedorBiografia,#contenedroEstadisticas{
+        margin: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #contenedorBiografia:nth-of-type(1) { order: 2; }
+    #contenedorInformacion:nth-of-type(2) { order: 1; }
+    #contenedroEstadisticas:nth-of-type(3) { order: 3; }
+} 
+
+@media (max-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header h1{
+        font-size: 15px;
+        box-sizing: border-box;
+        display: flex;
+        width:100px;
+        position: absolute;
+        margin-left: 5px;
+    }
+    .sesion_iniciada, .sesion_iniciada input{
+        font-size: 12px;
+    }
+    footer{
+        margin-bottom: 80px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #navegador{
+        background-color: rgb(201, 102, 102);
+        width: 100%;
+        overflow-y: auto;
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 1000;
+    }
+    #navegador li{
+        display: flex;
+        justify-content: space-around;
+        width: 70px;
+    }
+    .opcion_inicio{
+        display: none;
+    }
+    #navegador img{
+        display: block;
+        padding:10px;
+        width: 25px;
+        height: 25px;
+    }
+    #botones_formulario{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    #botones_formulario .der10px{
+        margin-right: 0px;
+    }
+    #botones_formulario input{
+        width: 45%;
+        color: white;
+        background-color: brown;
+        padding:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    #cont2,#cont3{
+        width: 100%;
+        height: 400px;
+      }
+    .login_usuario{
+        width: 90%;
+    }
+    #info_principal{
+        flex-direction: column;
+        align-items: center;
+    }
+    #info_principal p{
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+    }
+    #contenedorInformacion img{
+        margin:0px;
+        width: 40%;
+    }
+    #config_user #boton_config{
+        padding: 10px;
+    }
+    #config_user{
+        padding: 10px;
+        width: 90%;
+    }
+    #config_user input{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .no_cabe_texto{
+        padding-left: 0px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    #contGlobal{
+        flex-direction: column;
+    }
+    #contDerecha{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

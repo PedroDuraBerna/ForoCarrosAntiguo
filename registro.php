@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
+<style>
         #navegador #boton_registrarte{
             background-color: brown;
         }
-    </style>
-    <title>Registrarse</title>
-</head>
-<body>
+</style>
+
     <?php 
     require("bloques/header.php");
     require("bloques/navegador.php"); 
-    require("registro/validar_formulario_registro.php");
+    require("validaciones/validar_formulario_registro.php");
     require("usuario/usuario.php");
     require("util/codificacion/encriptacion.php");
     ?>
@@ -63,13 +54,13 @@
                 $contraseña = $encriptar($contraseña);
 
                 $usuario = new usuario;
-                $conexion = new conexion;
-                $usuario->insertar_usuario($conexion,$nombre_usuario,$contraseña,$correo,$fecha_nacimiento,$fecha_registro_usuario,$fecha_ultima_conexion);
+                $usuario->insertar_usuario($nombre_usuario,$contraseña,$correo,$fecha_nacimiento,$fecha_registro_usuario,$fecha_ultima_conexion);
                 echo "<div class='registro usuario_registrado_correctamente'>";
                 echo "<h3>usuario registrado correctamente</h3>";
                 echo "<a href='ingreso.php'><p class='nota_caracteres'>Ingresar en ForoCarros</p></a>";
                 echo "<a href='index.php'><p class='nota_caracteres'>Ir al inicio</p></a>";
                 echo "</div>";
+                
             } else {
 
     if(!empty($err)){
@@ -144,5 +135,3 @@
 <?php 
     }
 require("bloques/footer.php"); ?>
-</body>
-</html>
