@@ -59,10 +59,10 @@
             ?></p> 
             </div>
             <div id="info_principal">
-            <p><b>Fecha ultima conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
+            <p><b>Última conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
             </div>
             <div id="info_principal">
-            <p><b>Fecha registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
+            <p><b>Registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
             </div>
             <div id="info_principal_boton">
             <p><b><a href="">Ver todos los posts de <?php echo $usuario["nombre_usuario"] ?></a></b></p> 

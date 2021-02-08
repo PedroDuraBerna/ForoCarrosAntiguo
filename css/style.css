@@ -342,6 +342,56 @@ h4{
     margin-bottom: 10px;
 }
 
+/* TEMAS FOROCARROS */
+
+#cabecera_temas{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    color: white;
+    background-color: brown;
+    padding: 5px;
+}
+#cabecera_1,#cabecera_2,#cabecera_3{
+    align-items: center;
+}
+#cabecera_1{
+    display: flex;
+    width: 80%;
+}
+#cabecera_2,#cabecera_3{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+}
+.link_temas{
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid brown;
+}
+.link_temas:last-child{
+    border-bottom: none;
+}
+.fila_tema{ 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.fila_tema h4{
+    margin-top: 5px;
+}
+.fila_tema:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: brown;
+}
+.imagen_fila_tema{
+    margin: 5px;
+    border:1px solid brown;
+    width: 50px;
+    height: 50px;
+}
 
 /* MEDIA QUERYS */
 
@@ -369,7 +419,29 @@ h4{
     #contenedorBiografia:nth-of-type(1) { order: 2; }
     #contenedorInformacion:nth-of-type(2) { order: 1; }
     #contenedroEstadisticas:nth-of-type(3) { order: 3; }
-} 
+
+    *{
+        overflow-x: hidden;
+    }
+  #contGlobal{
+      flex-direction: column;
+  }
+  #contDerecha{
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  #cabecera_1{
+      display: flex;
+      width: 70%;
+  }
+  #cabecera_2,#cabecera_3{
+      display: flex;
+      width: 15%;
+  }
+}
 
 @media (max-width: 600px) {
     header{
@@ -473,20 +545,24 @@ h4{
     .no_cabe_texto{
         padding-left: 0px;
     }
+    #cabecera_1{
+        display: flex;
+        width: 50%;
+    }
+    #cabecera_2,#cabecera_3{
+        display: flex;
+        width: 25%;
+    }
+    .fila_tema h4{
+        text-overflow: ellipsis;
+    }
+    #cabecera_temas{
+        font-size: 15px;
+    }
   }
 
-  @media (max-width: 1000px) {
-      *{
-          overflow-x: hidden;
+  @media (max-width: 300px){
+      .imagen_fila_tema{
+          display: none;
       }
-    #contGlobal{
-        flex-direction: column;
-    }
-    #contDerecha{
-        box-sizing: border-box;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
+  }

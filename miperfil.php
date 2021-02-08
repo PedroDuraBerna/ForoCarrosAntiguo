@@ -22,11 +22,11 @@
             <h3>Conóceme</h3>
             <div id="info_principal" class="conoceme_box">
             <p><b>Intereses:</b></p>
-            <p><?php echo $usuario["intereses_usuario"] ?></p> 
+            <p><?php echo nl2br($usuario["intereses_usuario"]) ?></p> 
             </div>
             <div id="info_principal" class="conoceme_box">
             <p><b>Biografía:</b></p>
-            <p><?php echo $usuario["biografia_usuario"] ?></p> 
+            <p><?php echo nl2br($usuario["biografia_usuario"]) ?></p> 
             </div>
             <div id="info_principal" class="conoceme_box">
             <p><b>Firma:</b></p> 
@@ -52,7 +52,6 @@
                     echo "Usuario";
                 }
 
-            
             ?></p> 
             </div>
             <div id="info_principal">
@@ -62,10 +61,10 @@
             <p><b>Fecha nacimiento:</b> <?php echo $usuario["fecha_nacimiento_usuario"] ?></p> 
             </div>
             <div id="info_principal">
-            <p><b>Fecha registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
+            <p><b>Registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
             </div>
             <div id="info_principal">
-            <p><b>Fecha ultima conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
+            <p><b>Última conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
             </div>
             <div id="info_principal" class='no_cabe_texto'>
                 <p><b>Enlace a tu perfil público: </b></p>

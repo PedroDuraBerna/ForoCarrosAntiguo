@@ -45,11 +45,6 @@
 
 <?php
 
-    //volvemos a redireccionar la página si no rellenamos los campos bien a la primera
-
-    if(isset($_POST["cambiar_correo"]) && !empty($err)){
-    }
-
     //con esto comprobamos que el usuario del que queremos configurar la cuenta es el mismo que ha iniciado la sesión
 
     if((isset($_SESSION["login"]["nombre_usuario"]) == isset($_GET["nombre_usuario"])) || !empty($err)){
@@ -250,6 +245,7 @@
         echo "<div class='registro'>";
         echo "<h3>Éxito</h3>";
         echo "<h2>Actualización realizada correctamente</h2>";
+        echo "<a href='miperfil.php'></a>";
         echo "</div>";
     }
     
