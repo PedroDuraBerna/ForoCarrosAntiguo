@@ -1,9 +1,12 @@
-<?php 
+<?php
 
 session_start();
 
 if(isset($_POST["cerrar_sesion"])){
-    session_start();
+    require("./usuario/usuario.php");
+    $usuario = new usuario;
+    $nombre_usuario = $_SESSION["login"]["nombre_usuario"];
+    $usuario->cambiar_fecha_ultima_conexion($nombre_usuario);
     unset($_SESSION["login"]);
     header("Location: index.php");
 }

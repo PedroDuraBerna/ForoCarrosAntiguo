@@ -91,6 +91,16 @@
             echo "<p><input type='submit' id='boton_config' value='Cambiar' name='cambiar_correo'></p>";
             echo "</form>";
             echo "</div>";
+            echo "<div id='config_user'>";
+            echo "<h4>Requisitos</h4>";
+            echo "<p><b>*</b> No introducir un correo vacío.</p>";
+            echo "<p><b>*</b> Introducir correo con formato válido (correo@gmail.com).</p>";
+            echo "<p><b>*</b> No introducir espacios.</p>";
+            echo "<p><b>*</b> No introducir carácteres inválidos (<b>'</b>,<b><</b>,<b>></b>,<b>\"</b>).</p>";
+            echo "<p><b>*</b> La longitud máxima del correo son 100 carácteres.</p>";
+            echo "<p><b>*</b> Si el correo ya existe en la base de datos no se cambiará.</p>";
+            echo "</div>";
+            echo "<a href='miperfil.php' class='volver_perfil'> Volver a mi perfil </a>";
         }
 
         if(isset($_GET["cambiar_contraseña"]) || isset($_POST["cambiar_contraseña"]) && !empty($err)){
@@ -106,6 +116,17 @@
             echo "<p><input type='submit' id='boton_config' value='Cambiar' name='cambiar_contraseña'></p>";
             echo "</form>";
             echo "</div>";
+            echo "<div id='config_user'>";
+            echo "<h4>Requisitos</h4>";
+            echo "<p><b>*</b> No introducir una contraseña vacía.</p>";
+            echo "<p><b>*</b> La contraseña debe contener mayúsculas, minúsculas y un número.</p>";
+            echo "<p><b>*</b> No introducir espacios.</p>";
+            echo "<p><b>*</b> No introducir carácteres inválidos (<b>'</b>,<b><</b>,<b>></b>,<b>\"</b>).</p>";
+            echo "<p><b>*</b> La longitud mínima de la contraseña son 8 carácteres.</p>";
+            echo "<p><b>*</b> La longitud máxima de la contraseña son 100 carácteres.</p>";
+            echo "<p><b>*</b> Si la contraseña nueva coincide con la actual no se cambiará.</p>";
+            echo "</div>";
+            echo "<a href='miperfil.php' class='volver_perfil'>Volver a mi perfil </a>";
         }
 
         if(isset($_GET["cambiar_foto_perfil"]) || isset($_POST["cambiar_foto_perfil"]) && !empty($err)){
@@ -127,6 +148,12 @@
             echo "<p><input type='submit' id='boton_config' value='Cambiar' name='cambiar_foto_perfil'></p>";
             echo "</form>";
             echo "</div>";
+            echo "<div id='config_user'>";
+            echo "<h4>Requisitos</h4>";
+            echo "<p><b>*</b> El tamaño máximo de la foto es de 1mb.</p>";
+            echo "<p><b>*</b> Formatos de imagen permitidos: png, jpg, gif, tiff, swf, jpeg2000.</p>";
+            echo "</div>";
+            echo "<a href='miperfil.php' class='volver_perfil'> Volver a mi perfil </a>";
         }
 
         if(isset($_GET["cambiar_intereses"]) || isset($_POST["cambiar_intereses"]) && !empty($err)){
@@ -149,6 +176,14 @@
             echo "<p><input type='submit' id='boton_config' value='Cambiar' name='cambiar_intereses'></p>";
             echo "</form>";
             echo "</div>";
+            echo "<div id='config_user'>";
+            echo "<h4>Requisitos</h4>";
+            echo "<p><b>*</b> No introducir un texto vacío.</p>";
+            echo "<p><b>*</b> No introducir espacios.</p>";
+            echo "<p><b>*</b> No introducir carácteres inválidos (<b>'</b>,<b><</b>,<b>></b>,<b>\"</b>).</p>";
+            echo "<p><b>*</b> La longitud máxima del texto son 100 carácteres.</p>";
+            echo "</div>";
+            echo "<a href='miperfil.php' class='volver_perfil'> Volver a mi perfil </a>";
         }
 
         if(isset($_GET["cambiar_biografia"]) || isset($_POST["cambiar_biografia"]) && !empty($err)){
@@ -171,6 +206,14 @@
             echo "<p><input type='submit' id='boton_config' value='Cambiar' name='cambiar_biografia'></p>";
             echo "</form>";
             echo "</div>";
+            echo "<div id='config_user'>";
+            echo "<h4>Requisitos</h4>";
+            echo "<p><b>*</b> No introducir un texto vacío.</p>";
+            echo "<p><b>*</b> No introducir espacios.</p>";
+            echo "<p><b>*</b> No introducir carácteres inválidos (<b>'</b>,<b><</b>,<b>></b>,<b>\"</b>).</p>";
+            echo "<p><b>*</b> La longitud máxima del texto son 1000 carácteres.</p>";
+            echo "</div>";
+            echo "<a href='miperfil.php' class='volver_perfil'> Volver a mi perfil </a>";
         }
 
         if(isset($_GET["cambiar_firma"]) || isset($_POST["cambiar_firma"]) && !empty($err)){
@@ -193,6 +236,14 @@
             echo "<p><input type='submit' id='boton_config' value='Cambiar' name='cambiar_firma'></p>";
             echo "</form>";
             echo "</div>";
+            echo "<div id='config_user'>";
+            echo "<h4>Requisitos</h4>";
+            echo "<p><b>*</b> No introducir un texto vacío.</p>";
+            echo "<p><b>*</b> No introducir espacios.</p>";
+            echo "<p><b>*</b> No introducir carácteres inválidos (<b>'</b>,<b><</b>,<b>></b>,<b>\"</b>).</p>";
+            echo "<p><b>*</b> La longitud máxima del texto son 100 carácteres.</p>";
+            echo "</div>";
+            echo "<a href='miperfil.php' class='volver_perfil'> Volver a mi perfil </a>";
         }
  
     } else {

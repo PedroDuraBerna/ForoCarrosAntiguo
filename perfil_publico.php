@@ -1,22 +1,26 @@
 <?php
 
-    require("usuario/usuario.php");
-
-    $usuario = new usuario;
-
-    if(isset($_GET["nombre_usuario"]) && $usuario->buscar_usuario($_GET["nombre_usuario"])){
-
-        $nombre_usuario = $_GET["nombre_usuario"];
-        $usuario = $usuario->construir_usuario_publico($nombre_usuario);
-
-?>
-
-<?php 
-
     require("bloques/header.php");
     require("bloques/navegador.php");
-    
-    ?>
+
+    require("usuario/usuario.php");
+
+    $user = new usuario;
+
+    if(!isset($_SESSION["login"]["nombre_usuario"])){
+        if(isset($_GET["nombre_usuario"])){
+            $nombre_usuario = $_GET["nombre_usuario"];
+            $user->contar_visita($nombre_usuario);
+        }
+    }
+
+    if(isset($_GET["nombre_usuario"]) && $user->buscar_usuario($_GET["nombre_usuario"])){
+
+        $nombre_usuario = $_GET["nombre_usuario"];
+        $usuario = $user->construir_usuario_publico($nombre_usuario);
+?>
+
+
     <h2>Perfil público</h2>
     <div id="contenedorMiPerfilGlobal">
         <div id="contenedorBiografia">
@@ -52,14 +56,15 @@
                 } else {
                     echo "Usuario";
                 }
-
-            
             ?></p> 
             </div>
             <div id="info_principal">
-            <p><b>Correo:</b> <?php echo $usuario["correo_usuario"] ?></p> 
+            <p><b>Fecha ultima conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
             </div>
             <div id="info_principal">
+            <p><b>Fecha registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
+            </div>
+            <div id="info_principal_boton">
             <p><b><a href="">Ver todos los posts de <?php echo $usuario["nombre_usuario"] ?></a></b></p> 
             </div>
         </div>
@@ -79,12 +84,6 @@
             </div>
             <div id="info_principal">
             <p><b>Fecha nacimiento:</b> <?php echo $usuario["fecha_nacimiento_usuario"] ?></p> 
-            </div>
-            <div id="info_principal">
-            <p><b>Fecha ultima conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
-            </div>
-            <div id="info_principal">
-            <p><b>Fecha registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
             </div>
         </div>
     </div>

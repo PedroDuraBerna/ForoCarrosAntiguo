@@ -58,29 +58,38 @@
             <div id="info_principal">
             <p><b>Correo:</b> <?php echo $usuario["correo_usuario"] ?></p> 
             </div>
+            <div id="info_principal">
+            <p><b>Fecha nacimiento:</b> <?php echo $usuario["fecha_nacimiento_usuario"] ?></p> 
+            </div>
+            <div id="info_principal">
+            <p><b>Fecha registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
+            </div>
+            <div id="info_principal">
+            <p><b>Fecha ultima conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
+            </div>
             <div id="info_principal" class='no_cabe_texto'>
                 <p><b>Enlace a tu perfil público: </b></p>
                 <p><a href="perfil_publico.php?nombre_usuario=<?php echo $usuario["nombre_usuario"] ?>">http://localhost/ForoCarros/V3%20ACTUAL/perfil_publico.php?nombre_usuario=PeterHard</a></p>
             </div>
-            <div id="info_principal">
+            <div id="info_principal_boton">
             <p><b><a href="">Ver todos mis posts</a></b></p> 
             </div>
-            <div id="info_principal">
+            <div id="info_principal_boton">
             <p><b><a href="configuracion.php?nombre_usuario=<?php echo $usuario["nombre_usuario"] ?>&cambiar_correo">Cambiar correo</a></b></p> 
             </div>
-            <div id="info_principal">
+            <div id="info_principal_boton">
             <p><b><a href="configuracion.php?nombre_usuario=<?php echo $usuario["nombre_usuario"] ?>&cambiar_contraseña">Cambiar contraseña</a></b></p> 
             </div>
-            <div id="info_principal">
+            <div id="info_principal_boton">
             <p><b><a href="configuracion.php?nombre_usuario=<?php echo $usuario["nombre_usuario"] ?>&cambiar_foto_perfil">Cambiar foto de perfil</a></b></p> 
             </div>
-            <div id="info_principal">
+            <div id="info_principal_boton">
             <p><b><a href="configuracion.php?nombre_usuario=<?php echo $usuario["nombre_usuario"] ?>&cambiar_intereses">Cambiar intereses</a></b></p> 
             </div>
-            <div id="info_principal">
+            <div id="info_principal_boton">
             <p><b><a href="configuracion.php?nombre_usuario=<?php echo $usuario["nombre_usuario"] ?>&cambiar_biografia">Cambiar biografía</a></b></p> 
             </div>
-            <div id="info_principal">
+            <div id="info_principal_boton">
             <p><b><a href="configuracion.php?nombre_usuario=<?php echo $usuario["nombre_usuario"] ?>&cambiar_firma">Cambiar firma</a></b></p> 
             </div>
         </div>
@@ -98,15 +107,10 @@
             <div id="info_principal">
             <p><b>Visitas a tu perfíl:</b> <?php echo $usuario["contador_visitas_perfil"] ?></p> 
             </div>
-            <div id="info_principal">
-            <p><b>Fecha nacimiento:</b> <?php echo $usuario["fecha_nacimiento_usuario"] ?></p> 
-            </div>
-            <div id="info_principal">
-            <p><b>Fecha ultima conexión:</b> <?php echo $usuario["fecha_ultima_conexion"] ?></p> 
-            </div>
-            <div id="info_principal">
-            <p><b>Fecha registro:</b> <?php echo $usuario["fecha_registro"] ?></p> 
-            </div>
         </div>
     </div>
     <?php require("bloques/footer.php"); ?>
+
+    <script>
+
+    </script>

@@ -18,7 +18,7 @@
         }
 
         if(!in_array($tipo,$tipos_permitidos)){
-            $err["tipo"] = "No se admite el formato de imagen. Tipos permitidos: png,jpg,gif,tiff,swf,jpeg2000";
+            $err["tipo"] = "No se admite el formato de imagen. Tipos permitidos: png, jpg, gif, tiff, swf, jpeg2000";
         }
 
         //insertamos si no hay errores cambiamos la foto

@@ -272,17 +272,30 @@ h4{
     padding: 10px;
     width: 100%;
 }
+#info_principal_boton{
+    border-bottom: 1px solid brown ;
+    padding: 0px;
+}
+#info_principal_boton:last-child{
+    border-bottom: none;
+}
 .conoceme_box{
     flex-direction: column;
     padding-left:10px;
     padding-right:10px;
 }
 #contenedorInformacion b a{
+    box-sizing: border-box;
     display: flex;
+    padding: 10px;
     width: 100%;
     justify-content: center;
     text-decoration: none;
     color: brown;
+}
+#contenedorInformacion b a:hover{
+    color: white;
+    background-color: brown;
 }
 
 /* CONFIGURACIÓN */
@@ -318,9 +331,17 @@ h4{
     justify-content: center;
 }
 #config_user textarea{
+    box-sizing: border-box;
+    padding: 10px;
     width: 100%;
     resize: none;
 }
+.volver_perfil{
+    margin: auto;
+    color: brown;
+    margin-bottom: 10px;
+}
+
 
 /* MEDIA QUERYS */
 
@@ -455,6 +476,9 @@ h4{
   }
 
   @media (max-width: 1000px) {
+      *{
+          overflow-x: hidden;
+      }
     #contGlobal{
         flex-direction: column;
     }
